@@ -10,7 +10,7 @@ const { rateLimit } = require('express-rate-limit');
 // cors middleware
 const cors = require('cors');
 app.use(cors({
-  origin: '*',
+  origin: 'https://aetherismylove.github.io/rutgonlink_FE/',
   methods: ['GET', 'POST'],
 }));
 
