@@ -5,6 +5,7 @@ const helmet = require('helmet');
 app.use(helmet());
 const db = require('./db'); 
 db.run();
+app.set('trust proxy', 1);
 const { rateLimit } = require('express-rate-limit');
 // cors middleware
 const cors = require('cors');
